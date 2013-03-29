@@ -1,4 +1,4 @@
 Pygmy
 =====
 
-[link](www.google.com)
+Go away.
