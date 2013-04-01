@@ -1,0 +1,65 @@
+<div class="container">
+<p>
+<form class="form-inline" method="POST" action="/add">
+
+<fieldset>
+<legend>Crawl a website</legend>
+<input type="text" class="input-large" name="url" placeholder="Address">
+<label class="checkbox inline">
+<input type="checkbox" name="clean_crawl" value="1"> Clean the crawl
+</label>
+</fieldset>
+
+
+<br/>
+
+<a href="#" id="toggle-create-crawler-options" class="collapsed"> Options</a>
+<div id="create-crawler-options" style="display:none;">
+<label class="checkbox inline">
+<input type="checkbox" name="create_crawler_sitemap" value="1> Generate sitemap
+</label>
+
+<br><br>
+
+<select name="create_crawler_depth">
+<option value="0"> Crawling depth...</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+
+<br><br>
+Authentication: 
+<br>
+<input type="text" class="input-small" name="auth_user" placeholder="Username">
+<br>
+<input type="password" class="input-small" name="auth_pass" placeholder="Password">
+</div>
+
+<div style="padding-top: 10px;">
+<button type="submit" class="btn">Begin Crawling</button>
+</div>
+</form>
+</p>
+
+<p>
+<fieldset>
+<legend>Active Crawlers</legend>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Address</th>
+<th>Status</th>
+<th>General stats</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody=id="active-scrapers-body">
+</tbody>
+</table>
+</fieldset>
+</p>
+</div>
+
