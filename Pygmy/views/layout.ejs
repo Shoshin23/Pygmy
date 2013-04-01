@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap, from Twitter</title>
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--The stylesheets-->
+<link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+
+<!--The JS part-->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!--Using Highcharts for the graphs and shit-->
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="/js/highcharts.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<!--Client side javascript-->
+
+<script>
+var socket = io.connect(window.location.hostname, {port:3000});
+</script>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+
+<div id="cont"></div>
+
+<a class="brand" href="/">Pygmy</a>
+</div>
+</div>
+</div>
+
+<% if(typeof body!="undefined") { %>
+<%- body %>
+<% } %>
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
