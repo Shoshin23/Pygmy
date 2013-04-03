@@ -5,4 +5,4 @@ Pygmy is a webcrawler written in Node.js. This was written inroder to understand
 of how I wrote this and the resources I used. 
 The code is heavily commented as it is. 
 
-Adios, for now.
+
